@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+    <Folder Include="Helper\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MarsXApps.Models\MarsXApps.Models.csproj" />
+    <ProjectReference Include="..\MarsXApps.Service\MarsXApps.Service.csproj" />
+    <ProjectReference Include="..\MarsXApps.Module.Environment\MarsXApps.Module.Environment.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Helper\" />
+  </ItemGroup>
+</Project>
