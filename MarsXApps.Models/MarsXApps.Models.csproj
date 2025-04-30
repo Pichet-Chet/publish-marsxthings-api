@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Filter\" />
+    <None Remove="Constants\" />
+    <None Remove="Authorized\" />
+    <None Remove="Filter\Authorized\" />
+    <None Remove="ThirdParty\" />
+    <None Remove="ThirdParty\SMSMKT\" />
+    <None Remove="Filter\MasterData\" />
+    <None Remove="Filter\ServiceAfterSale\" />
+    <None Remove="Customs\" />
+    <None Remove="Customs\MethodType\" />
+    <None Remove="Customs\CAEC\" />
+    <None Remove="Customs\Return\" />
+    <None Remove="Customs\Return\SasOrder\" />
+    <None Remove="Customs\Request\" />
+    <None Remove="Customs\Request\SasOrder\" />
+    <None Remove="Customs\Request\SysCustomer\" />
+    <None Remove="Filter\Posting\" />
+    <None Remove="Filter\LongdoMap\" />
+    <None Remove="Customs\LongdoMap\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Constants\" />
+    <Folder Include="Authorized\" />
+    <Folder Include="Filter\Authorized\" />
+    <Folder Include="ThirdParty\" />
+    <Folder Include="ThirdParty\SMSMKT\" />
+    <Folder Include="Filter\MasterData\" />
+    <Folder Include="Filter\ServiceAfterSale\" />
+    <Folder Include="Customs\MethodType\" />
+    <Folder Include="Customs\Return\" />
+    <Folder Include="Customs\Return\SasOrder\" />
+    <Folder Include="Customs\Request\" />
+    <Folder Include="Customs\Request\SasOrder\" />
+    <Folder Include="Customs\Request\SysCustomer\" />
+    <Folder Include="Filter\Posting\" />
+    <Folder Include="Filter\LongdoMap\" />
+    <Folder Include="Customs\LongdoMap\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.6" />
+  </ItemGroup>
+</Project>
