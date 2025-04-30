@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MasterData\" />
+    <None Remove="Authorized\" />
+    <None Remove="Helper\" />
+    <None Remove="Connection\" />
+    <None Remove="LongdoMap\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MasterData\" />
+    <Folder Include="Authorized\" />
+    <Folder Include="Helper\" />
+    <Folder Include="Connection\" />
+    <Folder Include="LongdoMap\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MarsXApps.Models\MarsXApps.Models.csproj" />
+    <ProjectReference Include="..\MarsXApps.Service\MarsXApps.Service.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>
